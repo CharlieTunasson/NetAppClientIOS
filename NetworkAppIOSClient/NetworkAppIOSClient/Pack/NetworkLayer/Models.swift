@@ -9,7 +9,8 @@
 import Foundation
 
 struct Player: Codable {
-    let id: String
+    let id: String?
+    let player_id: String?
     let email: String
     let elo: Int
     let losses: Int
@@ -19,7 +20,22 @@ struct Player: Codable {
     let wins: Int
 }
 
+struct Game: Codable {
+    let player1: Player
+    let player2: Player
+    let result: Int?
+    let startTime: String
+    let endTime: String?
+    let tournament: Int?
+    let id: Int
+}
+struct NoReply: Codable {}
+
 struct ResponseSession: Codable {
     let refresh_token: String
     let auth_token: String
+}
+
+struct LeaderBoard: Codable {
+    let players: [Player]
 }

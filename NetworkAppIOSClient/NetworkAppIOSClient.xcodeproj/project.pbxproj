@@ -10,6 +10,7 @@
 		0FF5534B54152DAF6BD98619 /* Pods_NetworkAppIOSClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C36DAE62DD84A2921E581D2F /* Pods_NetworkAppIOSClient.framework */; };
 		CB5461A221FE65EF00C94C7C /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461A121FE65EF00C94C7C /* GameVC.swift */; };
 		CB5461A621FE661100C94C7C /* StatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461A521FE661100C94C7C /* StatsVC.swift */; };
+		CB5461A821FE8E2600C94C7C /* ActualGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461A721FE8E2600C94C7C /* ActualGameVC.swift */; };
 		CB7AFE2621FDFF7B00F083D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE2521FDFF7B00F083D4 /* AppDelegate.swift */; };
 		CB7AFE2821FDFF7B00F083D4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE2721FDFF7B00F083D4 /* HomeVC.swift */; };
 		CB7AFE2D21FDFF7D00F083D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7AFE2C21FDFF7D00F083D4 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 		C4F8A718176268CCA07AA6F1 /* Pods-NetworkAppIOSClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkAppIOSClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkAppIOSClient/Pods-NetworkAppIOSClient.release.xcconfig"; sourceTree = "<group>"; };
 		CB5461A121FE65EF00C94C7C /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		CB5461A521FE661100C94C7C /* StatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsVC.swift; sourceTree = "<group>"; };
+		CB5461A721FE8E2600C94C7C /* ActualGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualGameVC.swift; sourceTree = "<group>"; };
 		CB7AFE2221FDFF7B00F083D4 /* NetworkAppIOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkAppIOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7AFE2521FDFF7B00F083D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB7AFE2721FDFF7B00F083D4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				CB5461A121FE65EF00C94C7C /* GameVC.swift */,
+				CB5461A721FE8E2600C94C7C /* ActualGameVC.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -373,6 +376,7 @@
 			files = (
 				CB7AFE4A21FE059500F083D4 /* Utility.swift in Sources */,
 				CB7AFE4021FE048000F083D4 /* NetworkEnums.swift in Sources */,
+				CB5461A821FE8E2600C94C7C /* ActualGameVC.swift in Sources */,
 				CB7AFE2821FDFF7B00F083D4 /* HomeVC.swift in Sources */,
 				CB7AFE5321FE071B00F083D4 /* UIGroup.swift in Sources */,
 				CB7AFE3D21FE038700F083D4 /* MainVC.swift in Sources */,

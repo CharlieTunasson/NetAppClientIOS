@@ -39,14 +39,37 @@ class API {
     }
 
     struct ListenMatch: RequestType {
-        typealias ResponseType = Player
+        typealias ResponseType = Game
         private let headers = defaultHeaders
-        public let params: [String:Any]
 
         var data: RequestData {
             return RequestData(path: path.listen,
-                               method: .POST,
-                               params: params,
+                               method: .GET,
+                               headers: headers,
+                               withAuth: true)
+        }
+    }
+
+    struct RequestMatch: RequestType {
+        typealias ResponseType = NoReply
+        private let headers = defaultHeaders
+        public let enemyId: String
+
+        var data: RequestData {
+            return RequestData(path: path.request_match(enemyId: enemyId),
+                               method: .GET,
+                               headers: headers,
+                               withAuth: true)
+        }
+    }
+
+    struct LeaderBoard: RequestType {
+        typealias ResponseType = [Player]
+        private let headers = defaultHeaders
+
+        var data: RequestData {
+            return RequestData(path: path.leader_board,
+                               method: .GET,
                                headers: headers)
         }
     }

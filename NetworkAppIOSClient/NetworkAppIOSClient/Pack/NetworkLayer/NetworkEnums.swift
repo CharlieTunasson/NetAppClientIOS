@@ -43,6 +43,10 @@ struct Path {
     public let session = "\(baseUrl)/session"
     public let players = "\(baseUrl)/players"
     public let listen = "\(baseUrl)/games/listen"
+    public let leader_board = "\(baseUrl)/players/leaderboard"
+    public func request_match(enemyId: String) -> String {
+        return  "\(baseUrl)/games/request/\(enemyId)"
+    }
 }
 
 public func configuredHeaders(additionalHeaders: [String:String]?, headers: [String:String]) -> [String:String] {
