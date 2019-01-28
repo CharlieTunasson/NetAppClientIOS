@@ -14,6 +14,7 @@ class GameVC: UIViewController {
         super.viewDidLoad()
 
         self.view.backgroundColor = .white
+        self.setHideKeyboardOnTap()
 
         setConstraints()
         initTargets()
@@ -27,14 +28,12 @@ class GameVC: UIViewController {
         self.gameButton.snp.makeConstraints { (make) in
             make.center.equalToSuperview()
         }
-
-        self.sendButton.snp.makeConstraints { (make) in
-            make.bottom.equalTo(self.view.safeAreaLayoutGuide).offset(-8)
+        self.textField.snp.makeConstraints { (make) in
+            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(16)
             make.centerX.equalToSuperview()
         }
-
-        self.textField.snp.makeConstraints { (make) in
-            make.bottom.equalTo(self.sendButton.snp.top)
+        self.sendButton.snp.makeConstraints { (make) in
+            make.top.equalTo(self.textField.snp.bottom).offset(4)
             make.centerX.equalToSuperview()
         }
     }
@@ -82,6 +81,7 @@ class GameVC: UIViewController {
         let field = UITextField()
         field.placeholder = "Opponent name" //Localize
         field.autocapitalizationType = .none
+        field.textAlignment = .center
         return field
     }()
 
