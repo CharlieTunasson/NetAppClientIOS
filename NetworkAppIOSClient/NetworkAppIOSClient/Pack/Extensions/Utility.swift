@@ -19,3 +19,7 @@ extension Dictionary {
         return dict
     }
 }
+
+struct FontNames {
+    static let FAPro_solid = "FontAwesome5ProSolid"
+}

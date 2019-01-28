@@ -11,7 +11,6 @@ import SnapKit
 
 class StatsVC: UIViewController {
 
-    lazy var box = UIView()
     var players: [Player] = [Player]()
 
     override func viewDidLoad() {
@@ -28,17 +27,10 @@ class StatsVC: UIViewController {
     }
 
     private func setConstraints() {
-        self.view.addSubview(self.label)
         self.view.addSubview(self.tableView)
 
-        self.label.snp.makeConstraints { (make) in
-            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(-8)
-            make.centerX.equalToSuperview()
-        }
-
         self.tableView.snp.makeConstraints { (make) in
-            make.top.equalTo(self.label.snp.bottom).offset(16)
-            make.leading.trailing.bottom.equalTo(self.view.safeAreaLayoutGuide)
+            make.leading.trailing.top.bottom.equalTo(self.view.safeAreaLayoutGuide)
         }
     }
 
@@ -60,15 +52,6 @@ class StatsVC: UIViewController {
     let tableView: UITableView = {
         let tableView = UITableView()
         return tableView
-    }()
-
-    let label: UILabel = {
-        let label = UILabel()
-        label.text = "Leaderboard" //Localize
-        label.font = UIFont.boldSystemFont(ofSize: 16.0)
-        label.textColor = .blackish
-        label.textAlignment = .center
-        return label
     }()
 }
 

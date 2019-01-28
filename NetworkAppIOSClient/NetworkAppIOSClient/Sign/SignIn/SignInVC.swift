@@ -63,11 +63,11 @@ class SignInVC: UIViewController {
             API.Session(params: ["email":email, "password":password]).execute(onSuccess: { (response) in
                 UserDefaults.standard.setAuthToken(token: response.auth_token)
                 UserDefaults.standard.setRefreshToken(token: response.refresh_token)
+                UserDefaults.standard.setAppUserEmail(email: email)
                 UserDefaults.standard.setIsLoggedIn(true)
                 sender.setAsLoading(false)
                 let mainVC = MainVC()
-                let nav = UINavigationController.init(rootViewController: mainVC)
-                self.present(nav, animated: true)
+                self.present(mainVC, animated: true)
             }) { (error) in
                 self.presentAlert(title: "Error", message: "Something went wrong!")
                 sender.setAsLoading(false)

@@ -11,12 +11,17 @@
 		CB5461A221FE65EF00C94C7C /* GameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461A121FE65EF00C94C7C /* GameVC.swift */; };
 		CB5461A621FE661100C94C7C /* StatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461A521FE661100C94C7C /* StatsVC.swift */; };
 		CB5461A821FE8E2600C94C7C /* ActualGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461A721FE8E2600C94C7C /* ActualGameVC.swift */; };
+		CB5461AB21FE91EA00C94C7C /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461AA21FE91EA00C94C7C /* SideMenuVC.swift */; };
+		CB5461AD21FE922500C94C7C /* SideMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461AC21FE922500C94C7C /* SideMenuCell.swift */; };
+		CB5461AF21FE927200C94C7C /* Font Awesome 5 Pro-Solid-900.otf in Resources */ = {isa = PBXBuildFile; fileRef = CB5461AE21FE927200C94C7C /* Font Awesome 5 Pro-Solid-900.otf */; };
+		CB5461B321FE939C00C94C7C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461B221FE939C00C94C7C /* MainVC.swift */; };
+		CB5461B521FE943E00C94C7C /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB5461B421FE943E00C94C7C /* Box.swift */; };
 		CB7AFE2621FDFF7B00F083D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE2521FDFF7B00F083D4 /* AppDelegate.swift */; };
 		CB7AFE2821FDFF7B00F083D4 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE2721FDFF7B00F083D4 /* HomeVC.swift */; };
 		CB7AFE2D21FDFF7D00F083D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB7AFE2C21FDFF7D00F083D4 /* Assets.xcassets */; };
 		CB7AFE3021FDFF7D00F083D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB7AFE2E21FDFF7D00F083D4 /* LaunchScreen.storyboard */; };
 		CB7AFE3A21FE014500F083D4 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE3921FE014500F083D4 /* UserDefaults.swift */; };
-		CB7AFE3D21FE038700F083D4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE3C21FE038700F083D4 /* MainVC.swift */; };
+		CB7AFE3D21FE038700F083D4 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE3C21FE038700F083D4 /* MainNavigator.swift */; };
 		CB7AFE4021FE048000F083D4 /* NetworkEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE3F21FE048000F083D4 /* NetworkEnums.swift */; };
 		CB7AFE4221FE049B00F083D4 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE4121FE049B00F083D4 /* Models.swift */; };
 		CB7AFE4421FE04A800F083D4 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7AFE4321FE04A800F083D4 /* Dispatcher.swift */; };
@@ -43,6 +48,11 @@
 		CB5461A121FE65EF00C94C7C /* GameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameVC.swift; sourceTree = "<group>"; };
 		CB5461A521FE661100C94C7C /* StatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsVC.swift; sourceTree = "<group>"; };
 		CB5461A721FE8E2600C94C7C /* ActualGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualGameVC.swift; sourceTree = "<group>"; };
+		CB5461AA21FE91EA00C94C7C /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		CB5461AC21FE922500C94C7C /* SideMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuCell.swift; sourceTree = "<group>"; };
+		CB5461AE21FE927200C94C7C /* Font Awesome 5 Pro-Solid-900.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Font Awesome 5 Pro-Solid-900.otf"; sourceTree = "<group>"; };
+		CB5461B221FE939C00C94C7C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		CB5461B421FE943E00C94C7C /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
 		CB7AFE2221FDFF7B00F083D4 /* NetworkAppIOSClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkAppIOSClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7AFE2521FDFF7B00F083D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB7AFE2721FDFF7B00F083D4 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
@@ -50,7 +60,7 @@
 		CB7AFE2F21FDFF7D00F083D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB7AFE3121FDFF7D00F083D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB7AFE3921FE014500F083D4 /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
-		CB7AFE3C21FE038700F083D4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		CB7AFE3C21FE038700F083D4 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		CB7AFE3F21FE048000F083D4 /* NetworkEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnums.swift; sourceTree = "<group>"; };
 		CB7AFE4121FE049B00F083D4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		CB7AFE4321FE04A800F083D4 /* Dispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
@@ -125,6 +135,31 @@
 			path = Stats;
 			sourceTree = "<group>";
 		};
+		CB5461A921FE91D800C94C7C /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				CB5461AA21FE91EA00C94C7C /* SideMenuVC.swift */,
+				CB5461AC21FE922500C94C7C /* SideMenuCell.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		CB5461B021FE927700C94C7C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CB5461AE21FE927200C94C7C /* Font Awesome 5 Pro-Solid-900.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CB5461B121FE934F00C94C7C /* MainNavigator */ = {
+			isa = PBXGroup;
+			children = (
+				CB7AFE3C21FE038700F083D4 /* MainNavigator.swift */,
+			);
+			path = MainNavigator;
+			sourceTree = "<group>";
+		};
 		CB7AFE1921FDFF7B00F083D4 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +183,7 @@
 			children = (
 				CB7AFE4B21FE064700F083D4 /* Sign */,
 				CB7AFE3B21FE02F600F083D4 /* Main */,
+				CB5461A021FE65DB00C94C7C /* Tabs */,
 				CB7AFE3721FE012900F083D4 /* Pack */,
 				CB7AFE2521FDFF7B00F083D4 /* AppDelegate.swift */,
 				CB7AFE2721FDFF7B00F083D4 /* HomeVC.swift */,
@@ -161,6 +197,7 @@
 		CB7AFE3721FE012900F083D4 /* Pack */ = {
 			isa = PBXGroup;
 			children = (
+				CB5461B021FE927700C94C7C /* Fonts */,
 				CB7AFE5B21FE07CD00F083D4 /* Utility */,
 				CB7AFE5621FE077300F083D4 /* UIComponents */,
 				CB7AFE3E21FE046000F083D4 /* NetworkLayer */,
@@ -183,8 +220,9 @@
 		CB7AFE3B21FE02F600F083D4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				CB5461A021FE65DB00C94C7C /* Tabs */,
-				CB7AFE3C21FE038700F083D4 /* MainVC.swift */,
+				CB5461A921FE91D800C94C7C /* SideMenu */,
+				CB5461B121FE934F00C94C7C /* MainNavigator */,
+				CB5461B221FE939C00C94C7C /* MainVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -223,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				CB7AFE5C21FE07D900F083D4 /* Regex.swift */,
+				CB5461B421FE943E00C94C7C /* Box.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -325,6 +364,7 @@
 			files = (
 				CB7AFE3021FDFF7D00F083D4 /* LaunchScreen.storyboard in Resources */,
 				CB7AFE2D21FDFF7D00F083D4 /* Assets.xcassets in Resources */,
+				CB5461AF21FE927200C94C7C /* Font Awesome 5 Pro-Solid-900.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,11 +415,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB7AFE4A21FE059500F083D4 /* Utility.swift in Sources */,
+				CB5461B521FE943E00C94C7C /* Box.swift in Sources */,
 				CB7AFE4021FE048000F083D4 /* NetworkEnums.swift in Sources */,
 				CB5461A821FE8E2600C94C7C /* ActualGameVC.swift in Sources */,
 				CB7AFE2821FDFF7B00F083D4 /* HomeVC.swift in Sources */,
+				CB5461B321FE939C00C94C7C /* MainVC.swift in Sources */,
 				CB7AFE5321FE071B00F083D4 /* UIGroup.swift in Sources */,
-				CB7AFE3D21FE038700F083D4 /* MainVC.swift in Sources */,
+				CB7AFE3D21FE038700F083D4 /* MainNavigator.swift in Sources */,
 				CB7AFE5D21FE07D900F083D4 /* Regex.swift in Sources */,
 				CB7AFE4D21FE065300F083D4 /* SignInVC.swift in Sources */,
 				CB8805F721FE11070028F79B /* SignUpVC.swift in Sources */,
@@ -395,9 +437,11 @@
 				CB5461A621FE661100C94C7C /* StatsVC.swift in Sources */,
 				CB7AFE4821FE053500F083D4 /* API.swift in Sources */,
 				CB7AFE5521FE073400F083D4 /* UIGroup+Components.swift in Sources */,
+				CB5461AD21FE922500C94C7C /* SideMenuCell.swift in Sources */,
 				CB7AFE4621FE04B500F083D4 /* RequestData.swift in Sources */,
 				CB7AFE4F21FE068D00F083D4 /* SignInVC+EmailPasswordStack.swift in Sources */,
 				CB7AFE5121FE06A200F083D4 /* SignInVC+HeaderStack.swift in Sources */,
+				CB5461AB21FE91EA00C94C7C /* SideMenuVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

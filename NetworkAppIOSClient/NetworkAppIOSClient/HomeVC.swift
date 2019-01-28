@@ -20,9 +20,7 @@ class HomeVC: UIViewController {
         DispatchQueue.main.async {
             if UserDefaults.standard.getIsLoggedIn() {
                 let mainVC = MainVC()
-                mainVC.title = "Arm Wrestle"
-                let nav = UINavigationController(rootViewController: mainVC)
-                self.present(nav, animated: false)
+                self.present(mainVC, animated: false)
             } else {
                 let signInVC = SignInVC()
                 self.present(signInVC, animated: false)

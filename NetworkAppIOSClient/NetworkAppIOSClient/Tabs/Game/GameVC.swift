@@ -62,10 +62,12 @@ class GameVC: UIViewController {
 
     @objc func onGameButtonPressed(sender: UIButton) {
         sender.setAsLoading(true, with: .redish)
+
         API.ListenMatch().execute(onSuccess: { (game) in
             print(game)
 
             let actualGameVC = ActualGameVC()
+            actualGameVC.gameId = game.id
             self.navigationController?.pushViewController(actualGameVC, animated: true)
 
             sender.setAsLoading(false)
@@ -78,7 +80,7 @@ class GameVC: UIViewController {
 
     let textField: UITextField = {
         let field = UITextField()
-        field.placeholder = "Opponent" //Localize
+        field.placeholder = "Opponent name" //Localize
         field.autocapitalizationType = .none
         return field
     }()

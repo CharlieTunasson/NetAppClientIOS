@@ -47,6 +47,9 @@ struct Path {
     public func request_match(enemyId: String) -> String {
         return  "\(baseUrl)/games/request/\(enemyId)"
     }
+    public func game_touch(gameId: Int) -> String {
+        return  "\(baseUrl)/games/\(gameId)"
+    }
 }
 
 public func configuredHeaders(additionalHeaders: [String:String]?, headers: [String:String]) -> [String:String] {

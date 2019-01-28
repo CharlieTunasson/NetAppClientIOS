@@ -63,6 +63,19 @@ class API {
         }
     }
 
+    struct GameTouch: RequestType {
+        typealias ResponseType = Game
+        private let headers = defaultHeaders
+        public let gameId: Int
+
+        var data: RequestData {
+            return RequestData(path: path.game_touch(gameId: gameId),
+                               method: .POST,
+                               headers: headers,
+                               withAuth: true)
+        }
+    }
+
     struct LeaderBoard: RequestType {
         typealias ResponseType = [Player]
         private let headers = defaultHeaders
