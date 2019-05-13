@@ -10,7 +10,7 @@ import Foundation
 
 public typealias Parameters = [String:Any]
 
-let baseUrl = "http://netappsmm-env.8ryvux5at3.eu-north-1.elasticbeanstalk.com"
+let baseUrl = "http://netappsmm.eu-north-1.elasticbeanstalk.com/"
 
 public enum HTTPMethod : String {
     case GET = "GET"
@@ -44,6 +44,7 @@ struct Path {
     public let players = "\(baseUrl)/players"
     public let listen = "\(baseUrl)/games/listen"
     public let leader_board = "\(baseUrl)/players/leaderboard"
+    public let me_info = "\(baseUrl)/players/me"
     public func request_match(enemyId: String) -> String {
         return  "\(baseUrl)/games/request/\(enemyId)"
     }

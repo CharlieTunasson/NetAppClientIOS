@@ -107,8 +107,16 @@ extension MainVC: UIScrollViewDelegate {
 extension MainVC: SideMenuVCDelegate {
     func sideMenuVC(didSelect rowAt: Int) {
         switch rowAt {
-        case 0:
+        case 1:
             self.onLogOutPressed()
+        case 0:
+            API.MeInfo().execute(onSuccess: { (player) in
+                let message = "Wins:\(player.wins)\nLosses:\(player.losses)\nELO:\(player.elo)"
+
+                self.presentAlert(title: "Personal Stats", message: message)
+            }) { (error) in
+                self.presentAlert(title: "Error", message: "Something went wrong, try again later.")
+            }
         default:
             print("Something went horribly wrong.")
         }

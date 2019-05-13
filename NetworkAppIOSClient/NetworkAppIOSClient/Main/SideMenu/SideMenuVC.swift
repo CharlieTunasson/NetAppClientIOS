@@ -15,7 +15,7 @@ protocol SideMenuVCDelegate {
 class SideMenuVC: UIViewController {
 
     var delegate: SideMenuVCDelegate?
-    let optionList = ["Log out"]
+    let optionList = ["Personal stats", "Log out"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

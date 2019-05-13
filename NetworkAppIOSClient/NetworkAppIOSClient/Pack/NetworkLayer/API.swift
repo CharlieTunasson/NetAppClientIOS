@@ -86,4 +86,16 @@ class API {
                                headers: headers)
         }
     }
+
+    struct MeInfo: RequestType {
+        typealias ResponseType = Player
+        private let headers = defaultHeaders
+
+        var data: RequestData {
+            return RequestData(path: path.me_info,
+                               method: .GET,
+                               headers: headers,
+                               withAuth: true)
+        }
+    }
 }
